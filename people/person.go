@@ -1,14 +1,14 @@
 package people
 
 type Person struct {
-	firstName      string
-	lastName       string
-	age            uint8
-	distanceWalked uint16
+	FirstName      string
+	LastName       string
+	Age            uint8
+	DistanceWalked uint16
 }
 
-var Trevor Person = Person{firstName: "Trevor", lastName: "Sullivan", age: 30}
+var Trevor Person = Person{FirstName: "Trevor", LastName: "Sullivan", Age: 30}
 
 func (p *Person) Walk(distanceToWalk uint16) {
-	p.distanceWalked += distanceToWalk
+	p.DistanceWalked += distanceToWalk
 }
